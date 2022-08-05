@@ -12,16 +12,16 @@
         <a href="">View high scores</a>
         <h3 id="countdown"></h3>
     </header>
-    <div class="container1">
-        <h1 class="welcome">Welcome to Charlie's Coding Quiz!</h1>
-        <p class="info">
+    <div class="container1" data-state="visible">
+        <h1>Welcome to Charlie's Coding Challenge!</h1>
+        <p>
             This is a timed challenge in which you will attempt to answer as many questions 
             correctly as possible, until either the timer runs out or you reach the last question. 
             At the end, your score will be recorded and saved to the high scores page!
         </p>
     </div>
-    <div class="container2">
-        <h2 class="question">Commonly used data types DO NOT include:</h2>
+    <div class="container2" data-state="hidden">
+        <h2>Commonly used data types DO NOT include:</h2>
         <div class="answers">
             <button class="one">1. numbers</button>
             <button class="two">2. strings</button>
@@ -29,8 +29,8 @@
             <button class="four">4. booleans</button>
         </div>
     </div>
-    <div class="container3">
-        <h2 class="question">We can NOT use variables to store:</h2>
+    <div class="container3" data-state="hidden">
+        <h2>We can NOT use variables to store:</h2>
         <div class="answers">
             <button class="one">1. numbers</button>
             <button class="two">2. booleans</button>
@@ -38,8 +38,8 @@
             <button class="four">4. functions</button>
         </div>
     </div>
-    <div class="container4">
-        <h2 class="question">Events can be applied to:</h2>
+    <div class="container4" data-state="hidden">
+        <h2>Events can be applied to:</h2>
         <div class="answers">
             <button class="one">1. buttons</button>
             <button class="two">2. strings</button>
@@ -47,8 +47,8 @@
             <button class="four">4. by buying tickets</button>
         </div>
     </div>
-    <div class="container5">
-        <h2 class="question">Which switch(<span>expression</span>) is coded correctly?</h2>
+    <div class="container5" data-state="hidden">
+        <h2>Which switch(<span>expression</span>) is coded correctly?</h2>
         <div class="answers">
             <button class="one">
                 1. <span>suitcase</span> leather: </br>
@@ -72,13 +72,13 @@
             </button>
         </div>
     </div>
-    <div class="container6">
-        <h2 class="question">The following is an example of a variable declared in which scope:</h2>
+    <div class="container6" data-state="hidden">
+        <h2>The following is an example of a variable declared in which scope:</h2>
             <div class="example">
-                <span>function</span> charliesFunction() { </br>
-                    <span>var</span> adventure = "is out there!"; </br>
-                    // code here can use a little adventure in its life </br>
-                } </br>
+                <p><span>function</span> charliesFunction() {</p>
+                <p class="indent"><span>var</span> adventure = "is out there!";</p>
+                <p class="indent">// code here can use a little adventure in its life</p>
+                <p>}</p>
             </div>
         <div class="answers">
             <button class="one">1. spyglass</button>
@@ -87,6 +87,15 @@
             <button class="four">4. global</button>
         </div>
     </div>
+    <div class="times-up">
+        <h2>BUZZZZZZ ⏱</h2>
+        <p>Your final score is:</p>
+        <form>
+            <label for="initials">Enter your initials:</label>
+            <input type="text" placeholder="Your Initials" name="initials" id="initials" class="form-input"/>
+        </form>
+    </div>
+    <footer>Made with 💛 by Charlie</footer>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

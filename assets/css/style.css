@@ -1,13 +1,124 @@
+* {
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
-    --light-color: #99ffe2;
+    --light-color: #e6fff7;
     --medium-color: #ff0066;
-    --dark-color: #006674;
+    --dark-color: #005a66;
 }
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* Header Styles */
 a {
+    margin: 25px;
+    margin-top: 35px;
     color: var(--medium-color);
+}
+
+h3 {
+    margin: 25px;
+    margin-top: 35px;
+    color: var(--dark-color);
+}
+
+/* Welcome Message Styles */
+h1 {
+    padding: 15px;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.container1 {
+    width: 65%;
+    margin: auto;
+}
+
+p {
+    padding: 25px;
+    color: var(--dark-color);
+}
+
+/* Question Styles */
+h2 {
+    padding: 15px;
+    margin-bottom: 35px;
+    color: var(--dark-color);
+    text-align: center;
+    width: 100%;
+}
+
+.container2, .container3, .container4, .container5, .container6 {
+    margin: auto;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button {
+    background-color: var(--medium-color);
+    color: var(--light-color);
+    padding: 8px;
+    margin: 8px;
+    width: 95%;
+    border: solid, 2px, var(--dark-color);
+    border-radius: 3px;
+    text-align: left;
+}
+
+span {
+    color: var(--medium-color)
+}
+
+button span {
+    color: var(--dark-color);
+    background-color: var(--medium-color);
+}
+
+.example {
+    padding: 0 25px 25px 25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.example p {
+    margin: 0;
+    padding: 0;
+}
+
+.example .indent {
+    text-indent: 25px;
+}
+
+.answers .four {
+    margin-bottom: 55px;
+}
+
+/* Times Up Message Styles */
+.times-up {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer Styles */
+footer {
+    margin: 0;
+    padding: 25px;
+    text-align: right;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    width: 100%;
 }
