@@ -1,0 +1,13 @@
+:root {
+    --light-color: #99ffe2;
+    --medium-color: #ff0066;
+    --dark-color: #006674;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    color: var(--medium-color);
+}
