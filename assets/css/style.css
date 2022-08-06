@@ -41,6 +41,7 @@ h1 {
 }
 
 p {
+    font-size: 18px;
     padding: 25px;
     color: var(--dark-color);
 }
@@ -108,9 +109,26 @@ button span {
 }
 
 /* Times Up Message Styles */
-.times-up {
+.form {
     display: flex;
     justify-content: center;
+    margin-bottom: 55px;
+}
+
+.form form {
+    padding: 25px;
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 18px;
+}
+
+form input {
+    border-color: var(--dark-color);
+    border-radius: 3px;
+}
+
+.form button {
+    width: 40px;
 }
 
 /* Footer Styles */
