@@ -13,69 +13,69 @@
         <h3 id="countdown"></h3>
     </header>
     <div class="containers">
-        <div class="container1" data-state="visible">
+        <div class="container1" id="container1" data-state="visible">
             <h1>Welcome to Charlie's Coding Challenge!</h1>
             <p>
                 This is a timed challenge in which you will attempt to answer as many questions 
                 correctly as possible, until either the timer runs out or you reach the last question. 
                 At the end, your score will be recorded and saved to the high scores page!
             </p>
-            <button class="begin">Begin!</button>
+            <button class="begin" id="begin">Begin!</button>
         </div>
         <div id="questions">
-            <div class="container2" data-state="hidden">
+            <div class="container2" id="container2" data-state="hidden">
                 <h2>Commonly used data types DO NOT include:</h2>
                 <div class="answers">
-                    <button class="one">1. numbers</button>
-                    <button class="two">2. strings</button>
-                    <button class="three">3. alerts</button>
-                    <button class="four">4. booleans</button>
+                    <button id="one-one">1. numbers</button>
+                    <button id="one-two">2. strings</button>
+                    <button id="one-three">3. alerts</button>
+                    <button id="one-four">4. booleans</button>
                 </div>
             </div>
-            <div class="container3" data-state="hidden">
+            <div class="container3" id="container3" data-state="hidden">
                 <h2>We can NOT use variables to store:</h2>
                 <div class="answers">
-                    <button class="one">1. numbers</button>
-                    <button class="two">2. booleans</button>
-                    <button class="three">3. sweaters</button>
-                    <button class="four">4. functions</button>
+                    <button id="two-one">1. numbers</button>
+                    <button id="two-two">2. booleans</button>
+                    <button id="two-three">3. sweaters</button>
+                    <button id="two-four">4. functions</button>
                 </div>
             </div>
-            <div class="container4" data-state="hidden">
+            <div class="container4" id="container4" data-state="hidden">
                 <h2>Events can be applied to:</h2>
                 <div class="answers">
-                    <button class="one">1. buttons</button>
-                    <button class="two">2. strings</button>
-                    <button class="three">3. thread</button>
-                    <button class="four">4. by buying tickets</button>
+                    <button id="three-one">1. buttons</button>
+                    <button id="three-two">2. strings</button>
+                    <button id="three-three">3. thread</button>
+                    <button class="three-four">4. by buying tickets</button>
                 </div>
             </div>
-            <div class="container5" data-state="hidden">
+            <div class="container5" id="container5" data-state="hidden">
                 <h2>Which switch(<span>expression</span>) is coded correctly?</h2>
                 <div class="answers">
-                    <button class="one">
+                    <button id="four-one">
                         1. <span>suitcase</span> leather: </br>
                         // code block </br>
                         stop; </br>
                     </button>
-                    <button class="two">
+                    <button id="four-two">
                         2. <span>case</span> roe-v-wade: </br>
                         // code block </br>
                         break; </br>
                     </button>
-                    <button class="three">
+                    <button id="four-three">
                         3. <span>case</span> plates = </br>
                         // code block </br>
                         shatter; </br>
                     </button>
-                    <button class="four">
+                    <button id="four-four">
                         4. <span>luggage</span> carryon { </br>
                         // code block </br>
                         break; } </br>
                     </button>
                 </div>
             </div>
-            <div class="container6" data-state="hidden">
+            <div class="container6" id="container6" data-state="hidden">
                 <h2>The following is an example of a variable declared in which scope:</h2>
                     <div class="example">
                         <p><span>function</span> charliesFunction() {</p>
@@ -84,20 +84,20 @@
                         <p>}</p>
                     </div>
                 <div class="answers">
-                    <button class="one">1. spyglass</button>
-                    <button class="two">2. kaleidoscope</button>
-                    <button class="three">3. local</button>
-                    <button class="four">4. global</button>
+                    <button id="five-one">1. spyglass</button>
+                    <button id="five-two">2. kaleidoscope</button>
+                    <button id="five-three">3. local</button>
+                    <button id="five-four">4. global</button>
                 </div>
             </div>
-            <div class="times-up">
+            <div class="times-up" id="times-up">
                 <h2>BUZZZZZZ ⏱</h2>
                 <div class="form">
                     <p>Your final score is:</p>
                 <form>
                     <label for="initials">Enter your initials:</label>
                     <input type="text" placeholder="Your Initials" name="initials" id="initials" class="form-input"/>
-                    <button type="submit">Go!</button>
+                    <button type="submit" id="go">Go!</button>
                 </form>
                 </div>
             </div>

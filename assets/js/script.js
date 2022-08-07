@@ -1,16 +1,16 @@
-var container1 = document.getElementByClassName('container1');
-var container2 = document.getElementByClassName('container2');
-var container3 = document.getElementByClassName('container3');
-var container4 = document.getElementByClassName('container4');
-var container5 = document.getElementByClassName('container5');
-var container6 = document.getElementByClassName('container6');
+var container1 = document.getElementById('container1');
+var container2 = document.getElementById('container2');
+var container3 = document.getElementById('container3');
+var container4 = document.getElementById('container4');
+var container5 = document.getElementById('container5');
+var container6 = document.getElementById('container6');
 var questions = document.getElementById('questions');
 
-var button = document.getElementByClassName('begin');
-var buttonOne = document.getElementByClassName('one');
-var buttonTwo = document.getElementByClassName('two');
-var buttonThree = document.getElementByClassName('three');
-var buttonFour = document.getElementByClassName('four');
+var button = document.getElementById('begin');
+var buttonOne = document.getElementById('one-one');
+var buttonTwo = document.getElementById('one-two');
+var buttonThree = document.getElementById('one-three');
+var buttonFour = document.getElementById('one-four');
 
 // removes all questions so only the welcome message is showing
 questions.remove();
