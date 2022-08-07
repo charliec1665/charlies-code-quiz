@@ -5,6 +5,7 @@ var container3 = document.getElementById('container3');
 var container4 = document.getElementById('container4');
 var container5 = document.getElementById('container5');
 var container6 = document.getElementById('container6');
+var timesUp = document.getElementById('container7');
 var questions = document.getElementById('questions');
 
 var button = document.getElementById('begin');
@@ -28,15 +29,20 @@ var timerFunction = function() {
             timeLeft--;
         } else {
             timerEl.textContent = '';
+            debugger;
             clearInterval(timeInterval);
+            //remove current container
+            questions.remove();
             //show times-up container
-            var timesUp = document.getElementById('container7');
-
             containers.appendChild(timesUp);
           }
     }, 1000);
 }
 
+//function to remove current question and append times-up
+var removeQuestion = function() {
+
+}
 // create conditional to show only one container at a time, using "data-state 'visible'"
 var beginQuiz = function(event) {
     //remove welcome message
@@ -45,6 +51,10 @@ var beginQuiz = function(event) {
     containers.appendChild(container2);
     // start timer
     timerFunction();
+}
+
+var nextQuestion = function() {
+    // if selected answer is correct
 }
 
 // ceate timer for 75 seconds

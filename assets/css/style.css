@@ -132,6 +132,7 @@ button span {
     display: flex;
     justify-content: center;
     margin-bottom: 55px;
+    padding-bottom: 55px;
 }
 
 .form p {
@@ -178,6 +179,7 @@ main {
 /* Footer Styles */
 .footer-box {
     margin: 0;
+    margin-top: 55px;
     margin-bottom: 0;
     position: fixed;
     bottom: 0;
