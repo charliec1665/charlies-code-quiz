@@ -40,13 +40,21 @@ h1 {
 .container1 {
     width: 65%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 p {
     font-size: 18px;
     padding: 25px;
-    margin-bottom: 55px;
     color: var(--dark-color);
+}
+
+.begin {
+    width: 57px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 55px;
 }
 
 /* Question Styles */
@@ -113,6 +121,11 @@ button span {
 }
 
 /* Times Up Message Styles */
+.times-up {
+    text-align: center;
+    margin: auto;
+}
+
 .form {
     display: flex;
     justify-content: center;
@@ -133,6 +146,8 @@ button span {
 form input {
     border-color: var(--dark-color);
     border-radius: 3px;
+    color: var(--medium-color);
+
 }
 
 .form button {
