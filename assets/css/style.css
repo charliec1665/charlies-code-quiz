@@ -16,18 +16,21 @@ body {
 }
 
 /* Header Styles */
+header {
+    display: flex;
+}
 header a {
     margin: 25px;
-    margin-top: 35px;
+    margin-top: 10px;
     padding: 25px;
     color: var(--medium-color);
 }
 
 #countdown {
     margin: 25px;
-    margin-top: 35px;
+    margin-top: 10px;
     padding: 25px;
-    color: var(--dark-color);
+    color: var(--medium-color);
 }
 
 /* Welcome Message Styles */
@@ -54,7 +57,6 @@ p {
     width: 57px;
     text-align: center;
     margin: auto;
-    margin-bottom: 55px;
 }
 
 /* Question Styles */
@@ -116,7 +118,7 @@ button span {
     text-indent: 25px;
 }
 
-.answers .four {
+.answers #four {
     margin-bottom: 55px;
 }
 
@@ -174,7 +176,15 @@ main {
 }
 
 /* Footer Styles */
-footer {
+.footer-box {
+    margin: 0;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
     margin: 0;
     padding: 25px;
     text-align: right;

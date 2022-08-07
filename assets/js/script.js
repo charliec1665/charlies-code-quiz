@@ -1,3 +1,4 @@
+var containers = document.querySelector('.containers');
 var container1 = document.getElementById('container1');
 var container2 = document.getElementById('container2');
 var container3 = document.getElementById('container3');
@@ -29,25 +30,21 @@ var timerFunction = function() {
             timerEl.textContent = '';
             clearInterval(timeInterval);
             //show times-up container
-            var timesUp = document.getElementsByClassName('times-up');
+            var timesUp = document.getElementById('container7');
 
-            appendChild(timesUp);
+            containers.appendChild(timesUp);
           }
     }, 1000);
 }
 
 // create conditional to show only one container at a time, using "data-state 'visible'"
 var beginQuiz = function(event) {
-    var targetEl = event.target;
-
-    if (targetEl.matches(button)) {
-        //remove welcome message
+    //remove welcome message
     container1.remove();
     //show first question
-    appendChild(container2);
+    containers.appendChild(container2);
     // start timer
     timerFunction();
-    };
 }
 
 // ceate timer for 75 seconds
