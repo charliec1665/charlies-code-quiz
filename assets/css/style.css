@@ -6,7 +6,7 @@
 }
 
 :root {
-    --light-color: #e6fff7;
+    --light-color: #edfbf7;
     --medium-color: #ff0066;
     --dark-color: #005a66;
 }
@@ -60,6 +60,13 @@ p {
 }
 
 /* Question Styles */
+#questions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h2 {
     padding: 15px;
     margin-bottom: 35px;
@@ -118,10 +125,6 @@ button span {
     text-indent: 25px;
 }
 
-.answers #four {
-    margin-bottom: 55px;
-}
-
 /* Times Up Message Styles */
 .times-up {
     text-align: center;
@@ -155,6 +158,11 @@ form input {
 
 .form button {
     width: 40px;
+}
+
+/* Style to hide questions and times-up */
+[data-state="hidden"] {
+    display: none
 }
 
 /* High Scores Page Styles */

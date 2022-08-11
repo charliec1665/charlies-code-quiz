@@ -7,15 +7,18 @@ var container5 = document.getElementById('container5');
 var container6 = document.getElementById('container6');
 var timesUp = document.getElementById('container7');
 var questions = document.getElementById('questions');
+var questionContainer = document.getElementById('invisible-box');
 
-var button = document.getElementById('begin');
+var begin = document.getElementById('begin');
+var button = document.querySelector('.button');
 var buttonOne = document.getElementById('one-one');
 var buttonTwo = document.getElementById('one-two');
 var buttonThree = document.getElementById('one-three');
 var buttonFour = document.getElementById('one-four');
 
-// removes all questions so only the welcome message is showing
-questions.remove();
+var questArr = [container2, container3, container4, container5, container6];
+
+var challengeScore = 0;
 
 // function to start timer
 var timerFunction = function() {
@@ -29,36 +32,59 @@ var timerFunction = function() {
             timeLeft--;
         } else {
             timerEl.textContent = '';
-            debugger;
-            clearInterval(timeInterval);
+            
             //remove current container
-            questions.remove();
+            for (var i = 0; i < questArr.length; i++) {
+                questArr[i].dataset.state = "hidden";
+            };
+
             //show times-up container
-            containers.appendChild(timesUp);
-          }
+            timesUp.dataset.state = "visible";
+            clearInterval(timeInterval);
+        }
     }, 1000);
 }
 
-//function to remove current question and append times-up
-var removeQuestion = function() {
-
-}
 // create conditional to show only one container at a time, using "data-state 'visible'"
 var beginQuiz = function(event) {
-    //remove welcome message
-    container1.remove();
-    //show first question
-    containers.appendChild(container2);
+    //remove welcome message by setting data-state to hidden
+    container1.dataset.state = "hidden";
+    //show first question by setting data-state to visible
+    container2.dataset.state = "visible";
     // start timer
     timerFunction();
 }
 
-var nextQuestion = function() {
-    // if selected answer is correct
-}
+var nextQuestion = function(event) {
+        var element = event.target;
+        // if selected answer is correct add to score and move on to next question
+        if (event.target.matches('.button')) {
+            console.log("clicked!");
+            var state = element.getAttribute("data-answer");
+    
+            for (var i = 0; i < questArr.length; i++) {
+                if (state === "correct") {
+                    challengeScore += 25;
+                    console.log(challengeScore);
+                    console.log(this);
+                    questArr[i].dataset.state = "hidden";
+                    questArr[i+1].dataset.state = "visible";
+                    break;
+                    //can only get to work once, can't get the next question to work
+    
+                } else if (state === "incorrect") {
+                    timeLeft -= 15;
+    
+                };
+            };
+            
+        };
+        // if selected answer is incorrect subtract time from timer and move on to next question
+    };
 
-// ceate timer for 75 seconds
-    // when timer ends use conditional to take user to times-up container using data-state
+
+
+
 // create eventlistener for button clicks
     // when clicking question buttons take to next question
     // when answering incorrectly, use conditional to subtract 10secs from timer
@@ -66,4 +92,6 @@ var nextQuestion = function() {
 // create function to add initials and question scores to localstorage
     // access localstorage to display initials and score to highscores page
 
-button.addEventListener("click", beginQuiz);
+begin.addEventListener("click", beginQuiz);
+// answerButtonHandler.addEventListener("click", nextQuestion)
+questionContainer.addEventListener("click", nextQuestion)
