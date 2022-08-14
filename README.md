@@ -7,7 +7,7 @@ Charlie's code quiz is a timed challenge where the user answers a series of codi
 ## Usage
 
 Click the link here to deploy the page:
-<!-- Insert Link here before submitting -->
+ https://charliec1665.github.io/taskmaster-pro/
 
 ## Page Samples
 

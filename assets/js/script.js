@@ -19,7 +19,7 @@ var submit = document.getElementById('go');
 // tracking variables
 var challengeScore = 0;
 var timeLeft = 65;
-var questionNumber = 0; // track the question number
+var questionNumber = 0;
 
 // function to start timer
 var timerFunction = function() {
@@ -88,49 +88,15 @@ var nextQuestion = function(event) {
 
 // save score after highscore go button is clicked
 var saveScore = function() {
-    debugger;
-    console.log('clicked!');
+    alert("Click the 'view highscores' link, to see your score.")
     // grab initials from form input
     var name = document.getElementById('initials').value;
     console.log(name);
     // set the initials and score
-    // var newScore = {initials: name, score: challengeScore};
-    // console.log(newScore);
-    // saves pair to local storage
     JSON.stringify(localStorage.setItem('name', name));
     JSON.stringify(localStorage.setItem('score', challengeScore));
-    console.log('almost there!');
 
-    location.href = './highscores.html'
-    
-    // // get pair from local storage
-    // var writeName = localStorage.getItem('name');
-    // var writeScore = JSON.parse(localStorage.getItem('score'));
-    // console.log(writeName + writeScore);
-
-    // // create li to write pair (score, name)
-    // var listItem = document.createElement("li");
-    // listItem.innerText = ("Name: " + writeName + ", Score: " + writeScore);
-    // console.log(listItem);
-
-    // // append li to the parent element unordered list
-    // var scoreList = document.querySelector('.highscores');
-    // console.log(scoreList);
-    // scoreList.appendChild(listItem);
-    // console.log('so close...')
-    // // take user to highscores page where their score is displayed
-    // location.href('./highscores.html');
-}
-
-
-
-
-
-
-// write score to the highscore list
-var writeScore = function() {
-    
-    
+    window.location.href = './highscores.html'
 }
 
 // event listeners added to button clicks and calling their corresponding functions
