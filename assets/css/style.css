@@ -1,0 +1,204 @@
+* {
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #edfbf7;
+    --medium-color: #ff0066;
+    --dark-color: #005a66;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+}
+header a {
+    margin: 25px;
+    margin-top: 10px;
+    padding: 25px;
+    color: var(--medium-color);
+}
+
+#countdown {
+    margin: 25px;
+    margin-top: 10px;
+    padding: 25px;
+    color: var(--medium-color);
+}
+
+/* Welcome Message Styles */
+h1 {
+    padding: 15px;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.container1 {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+    padding: 25px;
+    color: var(--dark-color);
+}
+
+.begin {
+    width: 57px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Question Styles */
+#questions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding: 15px;
+    margin-bottom: 35px;
+    color: var(--dark-color);
+    text-align: center;
+    width: 100%;
+}
+
+.container2, .container3, .container4, .container5, .container6 {
+    margin: auto;
+    margin-bottom: 55px;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button {
+    background-color: var(--medium-color);
+    color: var(--light-color);
+    padding: 8px;
+    margin: 8px;
+    width: 95%;
+    border: solid, 2px, var(--dark-color);
+    border-radius: 3px;
+    text-align: left;
+}
+
+span {
+    color: var(--medium-color)
+}
+
+button span {
+    color: var(--dark-color);
+    background-color: var(--medium-color);
+}
+
+.example {
+    padding: 0 25px 25px 25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.example p {
+    margin: 0;
+    padding: 0;
+}
+
+.example .indent {
+    text-indent: 25px;
+}
+
+/* Times Up Message Styles */
+.times-up {
+    text-align: center;
+    margin: auto;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+    padding-bottom: 55px;
+}
+
+.form p {
+    margin-bottom: 0;
+}
+
+.form form {
+    padding: 25px;
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 18px;
+}
+
+form input {
+    border-color: var(--dark-color);
+    border-radius: 3px;
+    color: var(--medium-color);
+
+}
+
+.form button {
+    width: 40px;
+}
+
+/* Style to hide questions and times-up */
+[data-state="hidden"] {
+    display: none
+}
+
+/* High Scores Page Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.highscores {
+    border: solid 2px var(--dark-color);
+    width: 75%;
+    margin: auto;
+    list-style: none;
+}
+
+.highscores li {
+    padding: 10px;
+    color: var(--medium-color);
+}
+
+/* Footer Styles */
+.footer-box {
+    margin: 0;
+    margin-top: 55px;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    margin: 0;
+    padding: 25px;
+    text-align: right;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    width: 100%;
+}
